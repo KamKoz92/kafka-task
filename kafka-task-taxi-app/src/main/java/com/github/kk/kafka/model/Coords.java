@@ -8,6 +8,9 @@ public class Coords {
     double y;
 
     public static double calculateDistance(Coords c1, Coords c2) {
+        if(c1 == null || c2 == null) {
+            return 0;
+        }
         return Math.sqrt(Math.pow(c2.getX() - c1.getX(), 2) + Math.pow(c2.getY() - c1.getY(), 2));
     }
 }

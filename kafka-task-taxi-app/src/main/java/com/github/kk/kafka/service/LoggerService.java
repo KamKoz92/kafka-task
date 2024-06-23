@@ -1,6 +1,5 @@
 package com.github.kk.kafka.service;
 
-import com.github.kk.kafka.model.Signal;
 import com.github.kk.kafka.model.Vehicle;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -11,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 class LoggerService {
 
-    @KafkaListener(topics = "outputTopic2", groupId = "group1", containerFactory = "kafkaListenerContainerFactoryVehicle")
+    @KafkaListener(topics = "outputTopic2", groupId = "group2", containerFactory = "kafkaListenerContainerFactoryVehicle")
     public void processMessage1(@Payload Vehicle vehicle) {
         log.info("Vehicle {} traveled {} distance", vehicle.getName(), vehicle.getDist());
     }
