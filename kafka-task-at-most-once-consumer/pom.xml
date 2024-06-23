@@ -64,7 +64,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.github.kk.kafka.Producer</mainClass>
+                            <mainClass>com.github.kk.kafka.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -77,7 +77,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.kk.kafka.Producer</mainClass>
+                            <mainClass>com.github.kk.kafka.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

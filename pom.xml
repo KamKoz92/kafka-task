@@ -19,6 +19,7 @@
   <modules>
     <module>kafka-task-at-least-once-producer</module>
     <module>kafka-task-at-most-once-consumer</module>
+    <module>kafka-task-taxi-app</module>
   </modules>
 
   <dependencies>
